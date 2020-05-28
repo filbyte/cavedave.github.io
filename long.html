@@ -44,44 +44,43 @@
       <form
       action="https://formspree.io/xbjzgggv",
       method="POST",
-      onSubmit="return false"
       >
 
 
       <!-- First -->
         <div class="form-group">
           <label for="name">Do you have any questions about what to do before the colonoscopy?</label>
-          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()" ></textarea>
+          <textarea rows="3" name="name" class="form-control" ></textarea>
         </div>
 
       <!-- Second -->
         <div class="form-group">
           <label for="name">Is there anything you currently do/take that you would ask about?</label>
-          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+          <textarea rows="3" name="name" class="form-control"></textarea>
         </div>
 
       <!-- Third -->
         <div class="form-group">
           <label for="name">Would you have any questions about the practicalities of getting to the hospital and the right place in there?</label>
-          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+          <textarea rows="3" name="name" class="form-control"></textarea>
         </div>
 
         <!-- Fourth -->
         <div class="form-group">
           <label for="name">Do you have any questions about medication given to you before or during the procedure?</label>
-          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+          <textarea rows="3" name="name" class="form-control"></textarea>
         </div>
 
         <!-- Five -->
         <div class="form-group">
           <label for="name">What would worry you about the actual colonoscopy procedure?</label>
-          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+          <textarea rows="3" name="name" class="form-control"></textarea>
         </div>
 
         <!-- six -->
         <div class="form-group">
           <label for="name">What questions might you have about after the procedure?</label>
-          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+          <textarea rows="3" name="name" class="form-control"></textarea>
         </div>
 
         <!-- hidden fields -->
@@ -93,4 +92,14 @@
         </form>
       </main> 
   </div>
+  <script>
+    //prevent form from submitting on enter
+    function checkEnter(e){
+        e = e || event;
+        var txtArea = /textarea/i.test((e.target || e.srcElement).tagName);
+        return txtArea || (e.keyCode || e.which || e.charCode || 0) !== 13;
+    }
+    document.querySelector('form').onkeypress = checkEnter;
+
+  </script>
 </body>

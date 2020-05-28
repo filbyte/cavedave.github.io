@@ -15,16 +15,17 @@
       font-family: 'Open Sans', sans-serif;
       padding: 2rem 0;
     }
+
+    h2{
+      margin-bottom: 2rem;;
+    }
     header, form, .form-group{
       margin-bottom: 3rem;
     }
     header{
-      border-bottom: 1px solid rgba(0,0,0,0.2);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding-bottom: 1rem;;
     }
-    input[type="textarea"]{
-      height: 6rem;
-    }
-
   </style>
 </head>
 
@@ -39,59 +40,57 @@
     </header>
 
 
-  <main>  
-    <form
-    action="https://formspree.io/xbjzgggv",
-    method="POST",
-    onSubmit="return false"
-    >
+    <main>  
+      <form
+      action="https://formspree.io/xbjzgggv",
+      method="POST",
+      onSubmit="return false"
+      >
 
 
-    <!-- First -->
-      <div class="form-group">
-        <label for="name">Do you have any questions about what to do before the colonoscopy?</label>
-        <input type="textarea" rows="4" name="name" class="form-control"onkeypress="return noenter()">
-      </div>
+      <!-- First -->
+        <div class="form-group">
+          <label for="name">Do you have any questions about what to do before the colonoscopy?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()" ></textarea>
+        </div>
 
-    <!-- Second -->
-    <div class="form-group">
-      <label for="name">Is there anything you currently do/take that you would ask about?</label>
-      <input type="textarea" rows="4" name="name" class="form-control" onkeypress="return noenter()">
-    </div>
+      <!-- Second -->
+        <div class="form-group">
+          <label for="name">Is there anything you currently do/take that you would ask about?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
 
-    <!-- Third -->
-    <div class="form-group">
-      <label for="name">Would you have any questions about the practicalities of getting to the hospital and the right place in there?</label>
-      <input type="textarea" rows="4" name="name" class="form-control" onkeypress="return noenter()">
-    </div>
+      <!-- Third -->
+        <div class="form-group">
+          <label for="name">Would you have any questions about the practicalities of getting to the hospital and the right place in there?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
 
-    <!-- Fourth -->
-    <div class="form-group">
-      <label for="name">Do you have any questions about medication given to you before or during the procedure?</label>
-      <input type="textarea" rows="4" name="name" class="form-control" onkeypress="return noenter()">
-    </div>
+        <!-- Fourth -->
+        <div class="form-group">
+          <label for="name">Do you have any questions about medication given to you before or during the procedure?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
 
-    <!-- Five -->
-    <div class="form-group">
-      <label for="name">What would worry you about the actual colonoscopy procedure?</label>
-      <input type="textarea" rows="4" name="name" class="form-control" onkeypress="return noenter()">
-    </div>
+        <!-- Five -->
+        <div class="form-group">
+          <label for="name">What would worry you about the actual colonoscopy procedure?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
 
-    <!-- six -->
-    <div class="form-group">
-      <label for="name">What questions might you have about after the procedure?</label>
-      <input type="textarea" rows="4" name="name" class="form-control" onkeypress="return noenter()">
-    </div>
+        <!-- six -->
+        <div class="form-group">
+          <label for="name">What questions might you have about after the procedure?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
 
+        <!-- hidden fields -->
+        <input type="hidden" name="_subject" value="colonoscopy questions">  
+        <input type="hidden" name="_next" value="thanks.html" >
 
-    <input type="hidden" name="_subject" value="colonoscopy questions">  
-    <input type="hidden" name="_next" value="thanks.html" >
-    <input type="submit" value="Send" class="btn btn-primary btn-lg">
+        <input type="submit" value="Send" class="btn btn-primary btn-lg">
 
-
-
-
-    </form>
-    </main> 
+        </form>
+      </main> 
   </div>
 </body>

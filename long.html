@@ -1,76 +1,96 @@
+<!doctype html>
+<!--[if lt IE 7]> 		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> 			<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> 			<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> 	<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+  <title>Colonoscopy Questions</title>
+  <style>
+    body{
+      font-family: 'Open Sans', sans-serif;
+      padding: 2rem 0;
+    }
 
+    h2{
+      margin-bottom: 2rem;;
+    }
+    header, form, .form-group{
+      margin-bottom: 3rem;
+    }
+    header{
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding-bottom: 1rem;;
+    }
+  </style>
+</head>
 
-<title>Colonoscopy Questions</title>
-            <link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
-            <!--<link rel="stylesheet" href="static/bootstrap-theme.min.css">-->
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="container">
-<h2>Colonoscopy Questions</h2>
 <body>
 
+  <div class="container">
+
+    <header>
+      <h2>Colonoscopy Questions</h2>
+      <p>Thank you very much for taking the time to speak with us today.</p>
+      <p>We are building a system than can answer basic questions people have before a Colonoscopy. Due to delays caused by Covid-19 anything we can do to reduce waits for hospital procedures and reduce the time people spend in hospitals could be really useful<p>
+    </header>
 
 
-
-<p>
-Thank you very much for taking the time to speak with us today.
-<p>
-We are building a system than can answer basic questions people have before a Colonoscopy. Due to delays caused by Covid-19 anything we can do to reduce waits for hospital procedures and reduce the time people spend in hospitals could be really useful
-<p>
-
-
-<form
-  action="https://formspree.io/xbjzgggv",
-  method="POST",
-  onSubmit="return false"
->
-
-  <!-- your other form fields go here 
-  <input type="textarea" name="Questions" style="height:250px;font-size:14pt;width:400px;">
-<p>-->
-
-<!-- First -->
-
-  
-      <label for="name">Do you have any questions about what to do before the colonoscopy?</label>
-      <p>
-<input type="textarea" name="name" style="height:250px;font-size:14pt;width:400px;",onkeypress="return noenter()">
-
-<p>
-<!-- Second -->
-
-      <label for="exampleFormControlTextarea1">Is there anything you currently do/take that you would ask about?</label>
-      <p>
-<input type="textarea" name="exampleFormControlTextarea1" style="height:250px;font-size:14pt;width:400px;">
-<p>
-<!-- Third -->
-
-    <label for="exampleFormControlTextarea2">Would you have any questions about the practicalities of getting to the hospital and the right place in there?</label>
-    <p>
-<input type="textarea" name="exampleFormControlTextarea2" style="height:250px;font-size:14pt;width:400px;">
-<p>
-<!-- Fourth -->
-    <label for="exampleFormControlTextarea3">Do you have any questions about medication given to you before or during the procedure?</label><p>
-<input type="textarea" name="exampleFormControlTextarea3" style="height:250px;font-size:14pt;width:400px;">
-<p>
-<!-- Five -->
-    <label for="exampleFormControlTextarea4">What would worry you about the actual colonoscopy procedure?</label><p>
-<input type="textarea" name="exampleFormControlTextarea4" style="height:250px;font-size:14pt;width:400px;">
-<p>
-<!-- six -->
-   <label for="exampleFormControlTextarea5">What questions might you have about after the procedure?</label><p>
-<input type="textarea" name="exampleFormControlTextarea5" style="height:250px;font-size:14pt;width:400px;">
-
-<p>
-<p>
-  <p>
-  <input type="hidden" name="_subject" value="colonoscopy questions">  
-  <input type="hidden" name="_next" value="thanks.html" >
-  <input type="submit" value="Send">
+    <main>  
+      <form
+      action="https://formspree.io/xbjzgggv",
+      method="POST",
+      onSubmit="return false"
+      >
 
 
+      <!-- First -->
+        <div class="form-group">
+          <label for="name">Do you have any questions about what to do before the colonoscopy?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()" ></textarea>
+        </div>
 
+      <!-- Second -->
+        <div class="form-group">
+          <label for="name">Is there anything you currently do/take that you would ask about?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
 
-</form>
-  
+      <!-- Third -->
+        <div class="form-group">
+          <label for="name">Would you have any questions about the practicalities of getting to the hospital and the right place in there?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
 
+        <!-- Fourth -->
+        <div class="form-group">
+          <label for="name">Do you have any questions about medication given to you before or during the procedure?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
+
+        <!-- Five -->
+        <div class="form-group">
+          <label for="name">What would worry you about the actual colonoscopy procedure?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
+
+        <!-- six -->
+        <div class="form-group">
+          <label for="name">What questions might you have about after the procedure?</label>
+          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()"></textarea>
+        </div>
+
+        <!-- hidden fields -->
+        <input type="hidden" name="_subject" value="colonoscopy questions">  
+        <input type="hidden" name="_next" value="thanks.html" >
+
+        <input type="submit" value="Send" class="btn btn-primary btn-lg">
+
+        </form>
+      </main> 
+  </div>
 </body>

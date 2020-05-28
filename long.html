@@ -19,8 +19,9 @@ We are building a system than can answer basic questions people have before a Co
 
 
 <form
-  action="https://formspree.io/xbjzgggv"
-  method="POST"
+  action="https://formspree.io/xbjzgggv",
+  method="POST",
+  onSubmit="return false"
 >
 
   <!-- your other form fields go here 
@@ -28,10 +29,11 @@ We are building a system than can answer basic questions people have before a Co
 <p>-->
 
 <!-- First -->
+
   
       <label for="name">Do you have any questions about what to do before the colonoscopy?</label>
       <p>
-<input type="textarea" name="name" style="height:250px;font-size:14pt;width:400px;">
+<input type="textarea" name="name" style="height:250px;font-size:14pt;width:400px;",onkeypress="return noenter()">
 
 <p>
 <!-- Second -->
@@ -64,6 +66,10 @@ We are building a system than can answer basic questions people have before a Co
   <input type="hidden" name="_subject" value="colonoscopy questions">  
   <input type="hidden" name="_next" value="thanks.html" >
   <input type="submit" value="Send">
+
+
+
+
 </form>
   
 

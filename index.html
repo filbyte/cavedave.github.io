@@ -44,14 +44,13 @@
       <form
       action="https://formspree.io/xbjzgggv",
       method="POST",
-      onSubmit="return false"
       >
 
 
       <!-- First -->
         <div class="form-group">
           <label for="name">Do you have any questions about what to do before the colonoscopy?</label>
-          <textarea rows="3" name="name" class="form-control" onkeypress="return noenter()" ></textarea>
+          <textarea rows="3" name="name" class="form-control" ></textarea>
         </div>
 
         <!-- hidden fields -->
@@ -63,4 +62,14 @@
         </form>
       </main> 
   </div>
+  <script>
+    //prevent form from submitting on enter
+    function checkEnter(e){
+        e = e || event;
+        var txtArea = /textarea/i.test((e.target || e.srcElement).tagName);
+        return txtArea || (e.keyCode || e.which || e.charCode || 0) !== 13;
+    }
+    document.querySelector('form').onkeypress = checkEnter;
+
+  </script>
 </body>
